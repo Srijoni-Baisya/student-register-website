@@ -40,4 +40,11 @@ function sorting(){
     var remove_commas = display_student_array_sorting.join("");
     console.log(remove_commas);
     document.getElementById("display_name_without_commas").innerHTML=remove_commas;
+
+    document.getElementById("sort_button").style.display="none";
+    document.getElementById('new_update_button').style.display="inline-block";
+}
+function new_update(){
+    document.getElementById("updated_list").style.display="inline-block";
+    document.getElementById("updated_list").innerHTML="<h1>"+name_of_the_student_array+"</h1>";
 }
